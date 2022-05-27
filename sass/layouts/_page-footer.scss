@@ -1,0 +1,37 @@
+
+/*--------------------------Офомпление футера---------------------*/
+.page-footer {
+  background-color: var(--dark-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/*Свойства логотипа*/
+
+.page-footer__address {margin-top: 20px;}
+/*Задание ссылкам футера основного цвета и цвета выделения*/
+
+.page-footer__wrp {
+  display: flex;
+  align-items: baseline;
+}
+
+
+.page-footer__title{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+    text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.page-footer__item--left {
+  margin-right: 70px;
+}
+.page-footer__item--center {
+  margin-right: 93px;
+}
+
+.signup__btn {display: flex;
+    align-items: center;
+    margin-left: 12px;}

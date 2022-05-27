@@ -1,0 +1,140 @@
+/* ---------------------Оформление модального окна-------------------- */
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: visible;
+  transform: scale(1);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transform: scale(0);
+}
+
+.modal {
+  
+  width: 528px;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+}
+
+
+.modal-title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+}
+.modal-label {
+  display: block;
+}
+.modal-input {
+  display: inline-flex;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 10px;
+  padding-left: 42px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+&:focus-visible {
+  outline: 1px solid var(--accent-color);}
+  &.text {
+  color: rgba(117, 117, 117, 0.5);
+  padding: 12px 16px;
+  width:100%;
+  height: 110px;
+  resize: none; 
+}
+}
+
+
+
+.user-agreement {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 3px;
+  background-color: var(--white-color);
+  color: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .checkbox:checked + & {
+  border: none;
+  color: var(--white-color);
+  background-color: var(--accent-color);}
+}
+}
+
+.user-agreement-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+  margin-left: 3px;
+}
+ 
+
+.checked-icon {
+  width: 16px;
+  height: 15px;
+  fill: currentColor;
+}
+
+.modal-submit-btn {
+  margin-top: 30px;
+  margin-left: 125px;
+  border: 1px solid var(--accent-color);
+}
+
+.modal-icon-wrp {
+  position: relative;
+}
+
+.modal-icon {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 12px;
+  top: 11px;
+  fill: black;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .modal-input:hover,
+.modal-input:focus-visible + & {
+  fill: var(--accent-color);}
+  .modal-input:hover + & {
+  fill: var(--accent-color);
+}
+}
+
+

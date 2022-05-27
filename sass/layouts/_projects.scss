@@ -1,0 +1,80 @@
+/*---------------Оформление страницы портфолио--------------*/
+/*---------------Блок кнопок--------------*/
+
+
+/*Выстраиваем проэкты в сетку и задаем стандартные отступы*/
+.project-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-expl {
+  position: absolute;
+  transform: translateY(100%);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .project-item:hover & {
+  transform: translateY(0);
+}
+}
+.project-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover, &:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+}
+
+.projects-title {
+  text-align: center;
+}
+
+/*Задаем установки заглавий для карточек*/
+.project-title {
+  color: var(--primary-text-color);
+  margin-top: 0px;
+  margin-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.pjct-img {
+  display: block;
+}
+/*Задаем установки описаний для карточек*/
+ .project-descr {
+  color: var(--secondary-text-color);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/*Задаем карточкам границы в нижней части*/
+.card-border {
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid var(--border-color);
+  max-width: 370px;
+}

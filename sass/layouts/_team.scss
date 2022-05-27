@@ -1,0 +1,10 @@
+/*-----------------------------Оформление блока команды-------------------*/
+
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.team__list {
+  display: flex;
+  gap: 30px;
+}

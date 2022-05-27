@@ -1,0 +1,48 @@
+/*---------------Оформление блока преимуществ----------------*/
+
+.preferences {
+  padding-bottom: 0;
+}
+
+.preferences__title {
+  text-align: center;
+}
+
+
+
+.preferences__list {
+  display: flex;
+  gap: 30px;
+}
+
+.preferences__item {
+  width: 270px;
+}
+.preferences__bgnd {
+  display: flex;
+  background-color: var(--background-color);
+  width: 270px;
+  height: 120px;
+  padding: 25 px 100 px;
+  justify-content: center;
+  align-items: center;
+}
+.preferences__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.preferences__descr {
+  margin: 30px 0 0 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.preferences__text {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+}

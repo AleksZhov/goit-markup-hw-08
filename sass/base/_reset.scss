@@ -1,0 +1,22 @@
+body {
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+/* Удаление точек со всех элеметков списка*/
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+a {
+  text-decoration: none;
+}
+li {margin-left: 0px;}
+
+h1,h2,p,h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

@@ -1,0 +1,13 @@
+/*------------------Оформление первой чати хедера и навигационного меню-------------------------*/
+.header__container {display: flex;
+  align-items: center;
+}
+
+/*Задаем нижнюю границу хедера*/
+.page-header {
+  border-bottom: 1px solid var(--border-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.page-header__logo {margin-right: 93px;
+ }
