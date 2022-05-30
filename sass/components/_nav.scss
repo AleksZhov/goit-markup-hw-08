@@ -1,7 +1,9 @@
 /*Задаем отступы для элементов навигационного меню*/
-.nav, .nav__list { display: flex;
+ .nav__list { display: flex;
   align-items: center;
-}
+   @media screen and (max-width:767px) {display: none;}
+ 
+} 
 .nav__item:not(:last-child) {
   margin-right: 50px;
 }

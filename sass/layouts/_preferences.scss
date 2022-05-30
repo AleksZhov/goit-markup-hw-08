@@ -9,16 +9,17 @@
  
 }
 .preferences__list{
-@media screen and (min-width:$tablet) {display:flex;
+  width:100%;
+display:flex;
 flex-wrap: wrap;
-gap:30px;}}
+gap:30px;}
 
 
 
 .preferences__item {
   width: 100%;
-  @media screen and (min-width:$tablet){width: 354px;}
-  @media screen and (min-width:$desktop){width: 270px;}
+  @media screen and (min-width:$tablet){width: calc(100%/2 - 15px)}
+  @media screen and (min-width:$desktop){width: calc((100% - 90px)/4)}
 }
 .preferences__bgnd {
   display: flex;

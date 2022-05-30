@@ -6,8 +6,10 @@
 /*Задаем нижнюю границу хедера*/
 .page-header {
   border-bottom: 1px solid var(--border-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  height:80px;
+  padding-top:24px;
+  @media screen and (min-width:$tablet) and (max-width: 1199px) {padding-top:21px;}
 }
 .page-header__logo {margin-right: 93px;
+   @media screen and (min-width:$tablet) and (max-width: 1199px) {margin-right: 88px;}
  }
