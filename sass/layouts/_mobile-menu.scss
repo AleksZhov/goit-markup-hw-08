@@ -8,10 +8,11 @@
   z-index: 2;
   padding:48px 40px;
 
-&.is-open{display:block;}
-@media screen and (min-width:$tablet){
-  display:none;
-}}
+&.is-open{display:block;
+  @media screen and (min-width:$tablet){
+  display:none;}
+}
+}
 .menu {margin-bottom: 302px;}
 .menu__link {font-weight: 500;
 font-size: 40px;

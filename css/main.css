@@ -588,7 +588,7 @@ h1, h2, p, h3 {
   display: block;
 }
 @media screen and (min-width: 768px) {
-  .page-header__menu-wrp {
+  .page-header__menu-wrp.is-open {
     display: none;
   }
 }
