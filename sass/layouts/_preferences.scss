@@ -7,23 +7,24 @@
 .preferences__title {
   text-align: center;
 }
+.preferences__list{
+@media screen and (min-width:$tablet) {display:flex;
+flex-wrap: wrap;
+gap:30px;}}
 
 
-
-.preferences__list {
-  display: flex;
-  gap: 30px;
-}
 
 .preferences__item {
-  width: 270px;
+  width: 100%;
+  @media screen and (min-width:$tablet){width: 354px;}
+  @media screen and (min-width:$desktop){width: 270px;}
 }
 .preferences__bgnd {
   display: flex;
   background-color: var(--background-color);
-  width: 270px;
-  height: 120px;
-  padding: 25 px 100 px;
+ width: 100%;
+ padding-top: 25px;
+ padding-bottom:25px;
   justify-content: center;
   align-items: center;
 }

@@ -1,12 +1,10 @@
-.contacts {display: flex;
-  align-items: center;
-}
+
  
 
 /*Задаем отступы для адреса в хедере*/
-.page-header__contacts {
-  margin-left: auto;
-}
+// .page-header__contacts {
+//   margin-left: auto;
+// }
 
 
 
@@ -18,24 +16,36 @@
    &:hover,&:focus {
   color: var(--accent-color);
 }
-   &:not(:last-child) {
-  margin-right: 50px;
-}}
+}
 
 
-.contacts__mail,
-.contacts__tel {
+.contacts__mail{
   color: inherit;
   &:focus{
   color: var(--accent-color);
   fill: var(--accent-color);
 }
 }
+.contacts_tel {
+  font-weight: 500;
+font-size: 34px;
+line-height: 1.17;
+letter-spacing: 0.02em;
+color: inherit;
+
+outline: 1px solid red;
+background-color: red;
+&:focus{
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+}
 
 .contacts__icon {
-  display: inline-block;
+  display: none;
   margin-right: 10px;
    fill: currentColor;
+   @media screen and (min-width:$tablet){display:inline-block;}
   &--smartphone {
   width: 10px;
   height: 16px;}

@@ -1,6 +1,6 @@
 
 /*--------------------------Офомпление футера---------------------*/
-.page-footer {
+.page-footer {display:block;
   background-color: var(--dark-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -12,7 +12,15 @@
 
 .page-footer__wrp {
   display: flex;
-  align-items: baseline;
+  flex-wrap:wrap;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  @media screen and (min-width:$tablet){flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch; 
+}
+ @media screen and (min-width:$desktop){justify-content:space-between;}
 }
 
 
@@ -23,15 +31,25 @@
     text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
+  text-align: center;
+  @media screen and (min-width:$desktop){text-align: left;}
+  
+}
+.page-footer__item--left 
+{display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+  width: 232px;
+  @media screen and (min-width:$desktop){align-items: flex-start;
+  margin-bottom: 0px;}
 }
 
-.page-footer__item--left {
-  margin-right: 70px;
-}
 .page-footer__item--center {
-  margin-right: 93px;
+  margin-bottom: 60px;
+  width:206px;
 }
 
-.signup__btn {display: flex;
-    align-items: center;
-    margin-left: 12px;}
+// .signup__btn {display: flex;
+//     align-items: center;
+//     margin-left: 12px;}

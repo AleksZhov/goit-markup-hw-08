@@ -1,13 +1,16 @@
 /*Определяем свойства кнопок фильтров*/
 .filter-buttons {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   margin-bottom: 50px;
+   @media screen and (min-width:$tablet) {justify-content: center;}
 }
 .filter-button {
   color: var(--primary-text-color);
   background-color: var(--background-color);
   padding: 6px 20px;
+  margin-bottom: 15px;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 500;

@@ -32,6 +32,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+  @media screen and (max-width:1199px) {width:450px;}
 }
 
 
@@ -41,6 +42,7 @@
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
+  @media screen and (max-width:1199px) {line-height: 1.5;}
 }
 .modal-label {
   display: block;
@@ -79,6 +81,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width:1199px) {font-size: 12px;
+    line-height: 1.16;}
   span {
   display: flex;
   align-items: center;
@@ -113,7 +117,8 @@
 
 .modal-submit-btn {
   margin-top: 30px;
-  margin-left: 125px;
+  margin-left: calc(50% - 100px);
+  
   border: 1px solid var(--accent-color);
 }
 
