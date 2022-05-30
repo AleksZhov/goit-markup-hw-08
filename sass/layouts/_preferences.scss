@@ -1,11 +1,12 @@
 /*---------------Оформление блока преимуществ----------------*/
 
-.preferences {
-  padding-bottom: 0;
+.preferences { @media screen and (min-width:$desktop){padding-bottom: 0;}
+  
 }
 
 .preferences__title {
   text-align: center;
+ 
 }
 .preferences__list{
 @media screen and (min-width:$tablet) {display:flex;
@@ -40,6 +41,7 @@ gap:30px;}}
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+   @media screen and (min-width:$tablet) and (max-width:1199px) {text-align: center;}
 }
 
 .preferences__text {

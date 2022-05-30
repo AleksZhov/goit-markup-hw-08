@@ -54,8 +54,14 @@ h1, h2, p, h3 {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -105,6 +111,10 @@ h1, h2, p, h3 {
 }
 
 /*Задаем отступы для элементов навигационного меню*/
+.nav {
+  margin-bottom: 302px;
+}
+
 /*Задание ссылкам хедера основного цвета и цвета выделения и текста*/
 .nav__link {
   font-family: "Roboto";
@@ -267,12 +277,19 @@ h1, h2, p, h3 {
 
 .title {
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-block-start: 0px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .socials {
@@ -478,62 +495,24 @@ h1, h2, p, h3 {
   transform: translateY(-50%);
 }
 
-.page-header__menu-wrp {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 796px;
-  background-color: #fff;
-  padding: 48px 40px;
-}
-.page-header__menu-wrp.is-open {
-  display: block;
-}
-@media screen and (min-width: 768px) {
-  .page-header__menu-wrp {
-    position: static;
-    display: flex;
-    z-index: 0;
-  }
+/*------------------Оформление первой чати хедера и навигационного меню-------------------------*/
+.header__container {
+  position: relative;
+  height: 100%;
 }
 
-.page-header__menu-button {
-  background-color: var(--white-color);
-  border: none;
+/*Задаем нижнюю границу хедера*/
+.page-header {
+  border-bottom: 1px solid var(--border-color);
+  height: 60px;
+}
+
+.page-header__logo {
+  margin-top: auto;
+  margin-bottom: auto;
   position: absolute;
-  right: 15px;
   top: 50%;
   transform: translateY(-50%);
-}
-.page-header__menu-button:hover {
-  fill: var(--accent-color);
-}
-@media screen and (min-width: 768px) {
-  .page-header__menu-button {
-    display: none;
-  }
-}
-
-.page-header__icon-menu-close {
-  display: none;
-}
-.page-header__menu-button.is-open .page-header__icon-menu-close {
-  display: block;
-}
-.page-header__menu-button.is-open .page-header__icon-menu-close:hover {
-  fill: var(--accent-color);
-}
-
-.page-header__icon-menu {
-  display: block;
-}
-.page-header__icon-menu:hover {
-  fill: var(--accent-color);
-}
-.page-header__menu-button.is-open .page-header__icon-menu {
-  display: none;
 }
 
 /*---------------Оформление блока героя----------------*/
@@ -589,8 +568,10 @@ h1, h2, p, h3 {
 }
 
 /*---------------Оформление блока преимуществ----------------*/
-.preferences {
-  padding-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .preferences {
+    padding-bottom: 0;
+  }
 }
 
 .preferences__title {
@@ -641,6 +622,11 @@ h1, h2, p, h3 {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .preferences__descr {
+    text-align: center;
+  }
 }
 
 .preferences__text {

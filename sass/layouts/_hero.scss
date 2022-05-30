@@ -10,10 +10,11 @@
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+
   @media screen and (min-width: $tablet) { background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4),
    rgba(47, 48, 58, 0.4)),
-    url(../images/bgnd768.jpg);
-  }
+    url(../images/bgnd768.jpg);}
+    
     @media screen and (min-width: $desktop) { background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4),
    rgba(47, 48, 58, 0.4)),
     url(../images/bgnd1600.jpg);
