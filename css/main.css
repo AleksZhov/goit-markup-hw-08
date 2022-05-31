@@ -25,6 +25,10 @@
   margin: -1px;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 body {
   color: var(--primary-text-color);
   background-color: var(--white-color);
@@ -598,6 +602,7 @@ h1, h2, p, h3 {
 .page-header__menu-wrp.is-open {
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
 }
 @media screen and (min-width: 768px) {
   .page-header__menu-wrp.is-open {
@@ -1068,7 +1073,7 @@ h1, h2, p, h3 {
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-item:hover .project__expl {
+.project:hover .project__expl {
   transform: translateY(0);
 }
 

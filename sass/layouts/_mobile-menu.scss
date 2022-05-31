@@ -12,6 +12,8 @@
   &.is-open {
     display: flex;
     flex-direction: column;
+    overflow-y:scroll;
+   
     @media screen and (min-width: $tablet) {
       display: none;
     }
