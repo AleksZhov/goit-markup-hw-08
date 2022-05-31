@@ -1,20 +1,57 @@
 /*---------------Оформление страницы портфолио--------------*/
 /*---------------Блок кнопок--------------*/
 
-
 /*Выстраиваем проэкты в сетку и задаем стандартные отступы*/
-.project-list {
+.projects__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
 }
-.img-wrap {
+.projects__title {
+  text-align: center;
+}
+
+.project {
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 60px) / 3);
+  }
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.project__wrap {
   position: relative;
   overflow: hidden;
 }
 
-.project-expl {
+/*Задаем установки заглавий для карточек*/
+.project__title {
+  color: var(--primary-text-color);
+  margin-top: 0px;
+  margin-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.project__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project__expl {
   position: absolute;
   transform: translateY(100%);
   left: 0;
@@ -29,41 +66,11 @@
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .project-item:hover & {
-  transform: translateY(0);
-}
-}
-.project-item {
-  width: 100%;
-  @media screen and (min-width:$tablet) {width: calc((100% - 30px) /2);}
-  @media screen and (min-width:$desktop) {width: calc((100% - 60px) /3);}
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover, &:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-}
-
-.projects-title {
-  text-align: center;
-}
-
-/*Задаем установки заглавий для карточек*/
-.project-title {
-  color: var(--primary-text-color);
-  margin-top: 0px;
-  margin-bottom: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.pjct-img {
-  display: block;
+    transform: translateY(0);
+  }
 }
 /*Задаем установки описаний для карточек*/
- .project-descr {
+.project__descr {
   color: var(--secondary-text-color);
   margin-top: 0;
   margin-bottom: 0;
@@ -71,17 +78,21 @@
   padding-right: 24px;
   font-size: 16px;
   line-height: 1.88;
-  
 }
 
 /*Задаем карточкам границы в нижней части*/
-.card-border {
+.project__card-border {
   margin-top: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
   border: 1px solid var(--border-color);
   width: 100%;
- .project-item:first-child & 
-  { @media screen and (min-width:$tablet){height: 148px; };
- @media screen and (min-width:$desktop){height: 112px; }}
+  .project-item:first-child & {
+    @media screen and (min-width: $tablet) {
+      height: 148px;
+    }
+    @media screen and (min-width: $desktop) {
+      height: 112px;
+    }
+  }
 }

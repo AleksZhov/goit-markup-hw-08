@@ -1,32 +1,36 @@
 /*---------------Оформление блока преимуществ----------------*/
 
-.preferences { @media screen and (min-width:$desktop){padding-bottom: 0;}
-  
+.preferences {
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 0;
+  }
 }
 
 .preferences__title {
   text-align: center;
- 
 }
-.preferences__list{
-  width:100%;
-display:flex;
-flex-wrap: wrap;
-gap:30px;}
-
-
+.preferences__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
 .preferences__item {
   width: 100%;
-  @media screen and (min-width:$tablet){width: calc(100%/2 - 15px)}
-  @media screen and (min-width:$desktop){width: calc((100% - 90px)/4)}
+  @media screen and (min-width: $tablet) {
+    width: calc(100% / 2 - 15px);
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .preferences__bgnd {
   display: flex;
   background-color: var(--background-color);
- width: 100%;
- padding-top: 25px;
- padding-bottom:25px;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
   justify-content: center;
   align-items: center;
 }
@@ -42,7 +46,9 @@ gap:30px;}
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
-   @media screen and (min-width:$tablet) and (max-width:1199px) {text-align: center;}
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .preferences__text {

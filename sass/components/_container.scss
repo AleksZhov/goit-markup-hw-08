@@ -1,12 +1,17 @@
 .container {
-  width:100%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline:1px solid red;
-  position:relative;
-@media screen and (min-width:$mobile) {width: $mobile;}
-@media screen and (min-width:$tablet) { width: $tablet;}
-@media screen and (min-width:$desktop) {width: $desktop;}
+  position: relative;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }

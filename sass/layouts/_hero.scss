@@ -1,9 +1,8 @@
 /*---------------Оформление блока героя----------------*/
 .hero {
-  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4),
-   rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/bgnd480.jpg);
-  
+
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
@@ -11,15 +10,30 @@
   padding-bottom: 118px;
   text-align: center;
 
-  @media screen and (min-width: $tablet) { background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4),
-   rgba(47, 48, 58, 0.4)),
-    url(../images/bgnd768.jpg);}
-    
-    @media screen and (min-width: $desktop) { background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4),
-   rgba(47, 48, 58, 0.4)),
-    url(../images/bgnd1600.jpg);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/bgnd480-2x.jpg);
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/bgnd768.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/bgnd768-2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/bgnd1600.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/bgnd1600-2x.jpg);
+    }
     padding-top: 200px;
-  padding-bottom: 200px;}
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
@@ -33,16 +47,17 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-  padding-left:45px;
+  padding-left: 45px;
   padding-right: 45px;
-  
-   @media screen and (min-width: $tablet) { 
-     padding-left:189px;
-  padding-right: 189px;
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 189px;
+    padding-right: 189px;
   }
-    @media screen and (min-width: $desktop) { 
-      font-size: 44px;
-  line-height: 1.36;
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
     padding-left: 237px;
-  padding-right: 237px;}
+    padding-right: 237px;
+  }
 }

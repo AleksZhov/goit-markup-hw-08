@@ -1,51 +1,68 @@
-.page-header__menu-wrp {display:none;
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height: 796px;
+.page-header__menu-wrp {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-color: #fff;
   z-index: 2;
-  padding:48px 40px;
+  padding: 48px 40px;
 
-&.is-open{display:block;
-  @media screen and (min-width:$tablet){
-  display:none;}
+  &.is-open {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
 }
+.menu {
+  flex-grow: 1;
 }
-.menu {margin-bottom: 302px;}
-.menu__link {font-weight: 500;
-font-size: 40px;
-line-height: 1.18;
-letter-spacing: 0.02em;
-color:var(--primary-text-color)
+.menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 .menu__tel {
-  display:block;
+  display: block;
   font-weight: 500;
-font-size: 34px;
-line-height: 1.18;
-color: var(--accent-color);
-margin-bottom: 30px;
-letter-spacing: 0.02em;}
-.menu__mail {
-  display:block;
-  font-weight:  500;
-font-size: 24px;
-line-height: 1.17;
-letter-spacing: 0.02em;
-color:var(--secondary-text-color);
-margin-bottom: 64px;}
-.menu-socials {display: flex;
-margin-left:-10px;
-margin-right: -10px;}
-
-.menu-socials__link {font-weight: 500;
-font-size: 18px;
-line-height: 1.22;
-color:var(--accent-color);
-letter-spacing: 0.02em;
-padding-left:10px;
-padding-right: 10px;
+  font-size: 34px;
+  line-height: 1.18;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+  letter-spacing: 0.02em;
 }
-.menu-socials__item + .menu-socials__item  {border-left: 1px solid rgba(33, 33, 33, 0.2);}
+.menu__mail {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  margin-bottom: 64px;
+}
+
+.menu-socials {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.menu-socials__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--accent-color);
+  letter-spacing: 0.02em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.menu-socials__item + .menu-socials__item {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}

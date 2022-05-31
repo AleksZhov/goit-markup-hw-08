@@ -1,15 +1,21 @@
 /*------------------Оформление первой чати хедера и навигационного меню-------------------------*/
-.header__container {display: flex;
+.header__container {
+  display: flex;
   align-items: center;
 }
 
 /*Задаем нижнюю границу хедера*/
 .page-header {
   border-bottom: 1px solid var(--border-color);
-  height:80px;
-  padding-top:24px;
-  @media screen and (min-width:$tablet) and (max-width: 1199px) {padding-top:21px;}
+  height: 80px;
+  padding-top: 24px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    padding-top: 21px;
+  }
 }
-.page-header__logo {margin-right: 93px;
-   @media screen and (min-width:$tablet) and (max-width: 1199px) {margin-right: 88px;}
- }
+.page-header__logo {
+  margin-right: 93px;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-right: 88px;
+  }
+}

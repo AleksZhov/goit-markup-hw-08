@@ -81,218 +81,326 @@
       <!--Блок портфолио-->
       <section class="section projects">
         <div class="container">
-          <h1 class="projects-title visually-hidden">Наши проэкты</h1>
+          <h1 class="projects__title visually-hidden">Наши проэкты</h1>
           <!--Блок кнопок фильтров-->
           <ul class="filter-buttons">
-            <li class="filter-btn">
-              <button type="button" class="filter-button">Все</button>
+            <li class="filter-buttons__item">
+              <button type="button" class="filter-buttons__btn">Все</button>
             </li>
-            <li class="filter-btn">
-              <button type="button" class="filter-button">Веб-сайты</button>
+            <li class="filter-buttons__item">
+              <button type="button" class="filter-buttons__btn">Веб-сайты</button>
             </li>
-            <li class="filter-btn">
-              <button type="button" class="filter-button">Приложения</button>
+            <li class="filter-buttons__item">
+              <button type="button" class="filter-buttons__btn">Приложения</button>
             </li>
-            <li class="filter-btn">
-              <button type="button" class="filter-button">Дизайн</button>
+            <li class="filter-buttons__item">
+              <button type="button" class="filter-buttons__btn">Дизайн</button>
             </li>
-            <li class="filter-btn">
-              <button type="button" class="filter-button">Маркетинг</button>
+            <li class="filter-buttons__item">
+              <button type="button" class="filter-buttons__btn">Маркетинг</button>
             </li>
           </ul>
-          <ul class="project-list">
-            <li class="project-item">
+          <ul class="projects__list">
+            <li class="project">
               <a href="#">
-                <div class="img-wrap">
-                  <img
-                    class="pjct-img"
-                    src="./images/list1.jpg"
-                    alt="Открытый ноутбук с работающим браузером "
-                    width="370"
-                  />
-                  <p class="project-expl">
+                <div class="project__wrap">
+                  <picture >
+                <source  srcset="./images/list1-det.jpg 1x,
+                ./images/list1-det-2x.jpg 2x" 
+               media="(min-width:1200px)" type="image/jpeg"/>
+               <source  srcset="./images/list1-tab.jpg 1x,
+                ./images/list1-tab-2x.jpg 2x" 
+               media="(min-width:768px)" type="image/jpeg"/>
+               <source  srcset="./images/list1-mob.jpg 1x,
+                , ./images/list1-mob-2x.jpg 2x" 
+               media="(min-width:320px)" type="image/jpeg"/>
+                <img
+                class="project__img"
+                
+                src="./images/list1-mob.jpg"
+                
+                alt="Открытый ноутбук"
+              />
+             </picture>
+                  <p class="project__expl">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                     компании или частном лице.
                   </p>
                 </div>
-                <div class="card-border">
-                  <h2 class="project-title">Технокряк</h2>
-                  <p class="project-descr">Веб-сайт</p>
+                <div class="project__card-border">
+                  <h2 class="project__title">Технокряк</h2>
+                  <p class="project__descr">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="project-item">
+            <li class="project">
               <a href="#">
-                <div class="img-wrap">
-                  <img
-                    class="pjct-img"
-                    src="./images/list2.jpg"
-                    alt="Открытый ноутбук с работающим браузером "
-                    width="370"
-                  />
-                  <p class="project-expl">
+                <div class="project__wrap">
+                   <picture >
+                <source  srcset="./images/list2-det.jpg 1x,
+                ./images/list2-det-2x.jpg 2x" 
+               media="(min-width:1200px)" type="image/jpeg"/>
+               <source  srcset="./images/list2-tab.jpg 1x,
+                ./images/list2-tab-2x.jpg 2x" 
+               media="(min-width:768px)" type="image/jpeg"/>
+               <source  srcset="./images/list2-mob.jpg 1x,
+                , ./images/list2-mob-2x.jpg 2x" 
+               media="(min-width:320px)" type="image/jpeg"/>
+                <img
+                class="project__img"
+                
+                src="./images/list2-mob.jpg"
+                
+                alt="Открытый ноутбук с работающим браузером"
+              />
+             </picture>
+                  <p class="project__expl">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                     компании или частном лице.
                   </p>
                 </div>
-                <div class="card-border">
-                  <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
-                  <p class="project-descr">Дизайн</p>
+                <div class="project__card-border">
+                  <h2 class="project__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="project__descr">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="project-item">
+            <li class="project">
               <a href="#">
-                <div class="img-wrap">
-                  <img
-                    class="pjct-img"
-                    src="./images/list3.jpg"
-                    alt="Открытый ноутбук с работающим браузером "
-                    width="370"
-                  />
-                  <p class="project-expl">
+                <div class="project__wrap">
+                  <picture >
+                <source  srcset="./images/list3-det.jpg 1x,
+                ./images/list3-det-2x.jpg 2x" 
+               media="(min-width:1200px)" type="image/jpeg"/>
+               <source  srcset="./images/list3-tab.jpg 1x,
+                ./images/list3-tab-2x.jpg 2x" 
+               media="(min-width:768px)" type="image/jpeg"/>
+               <source  srcset="./images/list3-mob.jpg 1x,
+                , ./images/list3-mob-2x.jpg 2x" 
+               media="(min-width:320px)" type="image/jpeg"/>
+                <img
+                class="project__img"
+                
+                src="./images/list3-mob.jpg"
+                
+                alt="Открытый ноутбук"
+              />
+             </picture>
+                  <p class="project__expl">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                     компании или частном лице.
                   </p>
                 </div>
-                <div class="card-border">
-                  <h2 class="project-title">Ресторан Seafood</h2>
-                  <p class="project-descr">Приложение</p>
+                <div class="project__card-border">
+                  <h2 class="project__title">Ресторан Seafood</h2>
+                  <p class="project__descr">Приложение</p>
                 </div>
               </a>
             </li>
 
-            <li class="project-item">
+            <li class="project">
               <a href="#">
-                 <div class="img-wrap">
-                  <img
-                    class="pjct-img"
-                    src="./images/list4.jpg"
-                    alt="Открытый ноутбук с работающим браузером "
-                    width="370"
-                  />
-                  <p class="project-expl">
+                 <div class="project__wrap">
+                   <picture >
+                <source  srcset="./images/list4-det.jpg 1x,
+                ./images/list4-det-2x.jpg 2x" 
+               media="(min-width:1200px)" type="image/jpeg"/>
+               <source  srcset="./images/list4-tab.jpg 1x,
+                ./images/list4-tab-2x.jpg 2x" 
+               media="(min-width:768px)" type="image/jpeg"/>
+               <source  srcset="./images/list4-mob.jpg 1x,
+                , ./images/list4-mob-2x.jpg 2x" 
+               media="(min-width:320px)" type="image/jpeg"/>
+                <img
+                class="project__img"
+                
+                src="./images/list4-mob.jpg"
+                
+                alt="Открытый ноутбук"
+              />
+             </picture>
+                  <p class="project__expl">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                     компании или частном лице.
                   </p>
                 </div>
-                <div class="card-border">
-                  <h2 class="project-title">Проект Prime</h2>
-                  <p class="project-descr">Маркетинг</p>
+                <div class="project__card-border">
+                  <h2 class="project__title">Проект Prime</h2>
+                  <p class="project__descr">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="project-item">
-              <a href="#"> <div class="img-wrap">
-                  <img
-                    class="pjct-img"
-                    src="./images/list5.jpg"
-                    alt="Открытый ноутбук с работающим браузером "
-                    width="370"
-                  />
-                  <p class="project-expl">
+            <li class="project">
+              <a href="#"> <div class="project__wrap">
+                    <picture >
+                <source  srcset="./images/list5-det.jpg 1x,
+                ./images/list5-det-2x.jpg 2x" 
+               media="(min-width:1200px)" type="image/jpeg"/>
+               <source  srcset="./images/list5-tab.jpg 1x,
+                ./images/list5-tab-2x.jpg 2x" 
+               media="(min-width:768px)" type="image/jpeg"/>
+               <source  srcset="./images/list5-mob.jpg 1x,
+                , ./images/list5-mob-2x.jpg 2x" 
+               media="(min-width:320px)" type="image/jpeg"/>
+                <img
+                class="project__img"
+                
+                src="./images/list5-mob.jpg"
+                
+                alt="Открытый ноутбук"
+              />
+             </picture>
+                  <p class="project__expl">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                     компании или частном лице.
                   </p>
                 </div>
-                <div class="card-border">
-                  <h2 class="project-title">Проект Boxes</h2>
-                  <p class="project-descr">Приложение</p>
+                <div class="project__card-border">
+                  <h2 class="project__title">Проект Boxes</h2>
+                  <p class="project__descr">Приложение</p>
                 </div>
               </a>
             </li>
 
-            <li class="project-item">
+            <li class="project">
               <a href="#">
-                <div class="img-wrap">
-                  <img
-                    class="pjct-img"
-                    src="./images/list6.jpg"
-                    alt="Открытый ноутбук с работающим браузером "
-                    width="370"
-                  />
-                  <p class="project-expl">
+                <div class="project__wrap">
+                    <picture >
+                <source  srcset="./images/list6-det.jpg 1x,
+                ./images/list6-det-2x.jpg 2x" 
+               media="(min-width:1200px)" type="image/jpeg"/>
+               <source  srcset="./images/list6-tab.jpg 1x,
+                ./images/list6-tab-2x.jpg 2x" 
+               media="(min-width:768px)" type="image/jpeg"/>
+               <source  srcset="./images/list6-mob.jpg 1x,
+                , ./images/list6-mob-2x.jpg 2x" 
+               media="(min-width:320px)" type="image/jpeg"/>
+                <img
+                class="project__img"
+                
+                src="./images/list6-mob.jpg"
+                
+                alt="Открытый ноутбук"
+              />
+             </picture>
+                  <p class="project__expl">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                     компании или частном лице.
                   </p>
                 </div>
-                <div class="card-border">
-                  <h2 class="project-title">Inspiration has no Borders</h2>
-                  <p class="project-descr">Веб-сайт</p>
+                <div class="project__card-border">
+                  <h2 class="project__title">Inspiration has no Borders</h2>
+                  <p class="project__descr">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
-            <li class="project-item">
+            <li class="project">
               <a href="#">
-                 <div class="img-wrap">
-                  <img
-                    class="pjct-img"
-                    src="./images/list7.jpg"
-                    alt="Открытый ноутбук с работающим браузером "
-                    width="370"
-                  />
-                  <p class="project-expl">
+                 <div class="project__wrap">
+                   <picture >
+                <source  srcset="./images/list8-det.jpg 1x,
+                ./images/list8-det-2x.jpg 2x" 
+               media="(min-width:1200px)" type="image/jpeg"/>
+               <source  srcset="./images/list8-tab.jpg 1x,
+                ./images/list8-tab-2x.jpg 2x" 
+               media="(min-width:768px)" type="image/jpeg"/>
+               <source  srcset="./images/list8-mob.jpg 1x,
+                , ./images/list8-mob-2x.jpg 2x" 
+               media="(min-width:320px)" type="image/jpeg"/>
+                <img
+                class="project__img"
+                
+                src="./images/list8-mob.jpg"
+                
+                alt="Открытый ноутбук"
+              />
+             </picture>
+                  <p class="project__expl">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                     компании или частном лице.
                   </p>
                 </div>
-                <div class="card-border">
-                  <h2 class="project-title">Издание Limited Edition</h2>
-                  <p class="project-descr">Дизайн</p>
+                <div class="project__card-border">
+                  <h2 class="project__title">Издание Limited Edition</h2>
+                  <p class="project__descr">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="project-item">
+            <li class="project">
               <a href="#">
-                 <div class="img-wrap">
-                  <img
-                    class="pjct-img"
-                    src="./images/list8.jpg"
-                    alt="Открытый ноутбук с работающим браузером "
-                    width="370"
-                  />
-                  <p class="project-expl">
+                 <div class="project__wrap">
+                   <picture >
+                <source  srcset="./images/list8-det.jpg 1x,
+                ./images/list8-det-2x.jpg 2x" 
+               media="(min-width:1200px)" type="image/jpeg"/>
+               <source  srcset="./images/list8-tab.jpg 1x,
+                ./images/list8-tab-2x.jpg 2x" 
+               media="(min-width:768px)" type="image/jpeg"/>
+               <source  srcset="./images/list8-mob.jpg 1x,
+                , ./images/list8-mob-2x.jpg 2x" 
+               media="(min-width:320px)" type="image/jpeg"/>
+                <img
+                class="project__img"
+                
+                src="./images/list8-mob.jpg"
+                
+                alt="Открытый ноутбук"
+              />
+             </picture>
+                  <p class="project__expl">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                     компании или частном лице.
                   </p>
                 </div>
-                <div class="card-border">
-                  <h2 class="project-title">Проект LAB</h2>
-                  <p class="project-descr">Маркетинг</p>
+                <div class="project__card-border">
+                  <h2 class="project__title">Проект LAB</h2>
+                  <p class="project__descr">Маркетинг</p>
                 </div>
               </a>
             </li>
 
-            <li class="project-item">
+            <li class="project">
               <a href="#">
-                 <div class="img-wrap">
-                  <img
-                    class="pjct-img"
-                    src="./images/list9.jpg"
-                    alt="Открытый ноутбук с работающим браузером "
-                    width="370"
-                  />
-                  <p class="project-expl">
+                 <div class="project__wrap">
+                    <picture >
+                <source  srcset="./images/list9-det.jpg 1x,
+                ./images/list9-det-2x.jpg 2x" 
+               media="(min-width:1200px)" type="image/jpeg"/>
+               <source  srcset="./images/list9-tab.jpg 1x,
+                ./images/list9-tab-2x.jpg 2x" 
+               media="(min-width:768px)" type="image/jpeg"/>
+               <source  srcset="./images/list9-mob.jpg 1x,
+                , ./images/list9-mob-2x.jpg 2x" 
+               media="(min-width:320px)" type="image/jpeg"/>
+                <img
+                class="project__img"
+                
+                src="./images/list9-mob.jpg"
+                
+                alt="Открытый ноутбук"
+              />
+             </picture>
+                  <p class="project__expl">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                     компании или частном лице.
                   </p>
                 </div>
-                <div class="card-border">
-                  <h2 class="project-title">Growing Business</h2>
-                  <p class="project-descr">Приложение</p>
+                <div class="project__card-border">
+                  <h2 class="project__title">Growing Business</h2>
+                  <p class="project__descr">Приложение</p>
                 </div>
               </a>
             </li>

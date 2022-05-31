@@ -1,4 +1,4 @@
- .title {
+.title {
   margin-top: 0px;
   margin-bottom: 30px;
   margin-block-start: 0px;
@@ -6,7 +6,9 @@
   font-size: 28px;
   line-height: 1.18;
   text-align: center;
-  @media screen and (min-width:$desktop){font-size: 36px;
-  line-height: 1.17;
-margin-bottom: 50px;}
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }

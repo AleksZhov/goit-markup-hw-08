@@ -70,7 +70,6 @@ h1, h2, p, h3 {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
   position: relative;
 }
 @media screen and (min-width: 480px) {
@@ -404,6 +403,7 @@ h1, h2, p, h3 {
 
 .person__photo {
   display: block;
+  width: 100%;
 }
 
 .person__name {
@@ -452,7 +452,7 @@ h1, h2, p, h3 {
   }
 }
 
-.filter-button {
+.filter-buttons__btn {
   color: var(--primary-text-color);
   background-color: var(--background-color);
   padding: 6px 20px;
@@ -466,17 +466,17 @@ h1, h2, p, h3 {
   border: var(--background-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter-button:hover, .filter-button:focus {
+.filter-buttons__btn:hover, .filter-buttons__btn:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.filter-button.current {
+.filter-buttons__btn.current {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
 
-.filter-btn:not(:last-child) {
+.filter-buttons__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -578,14 +578,15 @@ h1, h2, p, h3 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 796px;
+  width: 100vw;
+  height: 100vh;
   background-color: #fff;
   z-index: 2;
   padding: 48px 40px;
 }
 .page-header__menu-wrp.is-open {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .page-header__menu-wrp.is-open {
@@ -594,7 +595,7 @@ h1, h2, p, h3 {
 }
 
 .menu {
-  margin-bottom: 302px;
+  flex-grow: 1;
 }
 
 .menu__link {
@@ -627,6 +628,7 @@ h1, h2, p, h3 {
 
 .menu-socials {
   display: flex;
+  flex-wrap: wrap;
   margin-left: -10px;
   margin-right: -10px;
 }
@@ -655,9 +657,19 @@ h1, h2, p, h3 {
   padding-bottom: 118px;
   text-align: center;
 }
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgnd480-2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgnd768.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgnd768-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -665,6 +677,11 @@ h1, h2, p, h3 {
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgnd1600.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgnd1600-2x.jpg);
   }
 }
 
@@ -972,19 +989,60 @@ h1, h2, p, h3 {
 /*---------------Оформление страницы портфолио--------------*/
 /*---------------Блок кнопок--------------*/
 /*Выстраиваем проэкты в сетку и задаем стандартные отступы*/
-.project-list {
+.projects__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.img-wrap {
+.projects__title {
+  text-align: center;
+}
+
+.project {
+  width: 100%;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .project {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project {
+    width: calc((100% - 60px) / 3);
+  }
+}
+.project:hover, .project:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project__wrap {
   position: relative;
   overflow: hidden;
 }
 
-.project-expl {
+/*Задаем установки заглавий для карточек*/
+.project__title {
+  color: var(--primary-text-color);
+  margin-top: 0px;
+  margin-bottom: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project__expl {
   position: absolute;
   transform: translateY(100%);
   left: 0;
@@ -999,51 +1057,12 @@ h1, h2, p, h3 {
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-item:hover .project-expl {
+.project-item:hover .project__expl {
   transform: translateY(0);
 }
 
-.project-item {
-  width: 100%;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 768px) {
-  .project-item {
-    width: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .project-item {
-    width: calc((100% - 60px) / 3);
-  }
-}
-.project-item:hover, .project-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.projects-title {
-  text-align: center;
-}
-
-/*Задаем установки заглавий для карточек*/
-.project-title {
-  color: var(--primary-text-color);
-  margin-top: 0px;
-  margin-bottom: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.pjct-img {
-  display: block;
-}
-
 /*Задаем установки описаний для карточек*/
-.project-descr {
+.project__descr {
   color: var(--secondary-text-color);
   margin-top: 0;
   margin-bottom: 0;
@@ -1054,7 +1073,7 @@ h1, h2, p, h3 {
 }
 
 /*Задаем карточкам границы в нижней части*/
-.card-border {
+.project__card-border {
   margin-top: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1062,12 +1081,12 @@ h1, h2, p, h3 {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .project-item:first-child .card-border {
+  .project-item:first-child .project__card-border {
     height: 148px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .project-item:first-child .card-border {
+  .project-item:first-child .project__card-border {
     height: 112px;
   }
 }

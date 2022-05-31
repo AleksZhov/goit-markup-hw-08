@@ -1,6 +1,9 @@
 /*-----------------------------Оформление наших задач-------------------*/
 .tasks {
-  @media screen and (max-width:calc($desktop - 1px)){display: none;}}
+  @media screen and (max-width: calc($desktop - 1px)) {
+    display: none;
+  }
+}
 
 .tasks__list {
   display: flex;

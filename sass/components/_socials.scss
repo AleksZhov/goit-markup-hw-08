@@ -14,9 +14,10 @@
   border-radius: 50%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, &:focus {
-  background-color: var(--accent-color);
-}
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 .socials__icon {
   width: 20px;
@@ -24,19 +25,20 @@
   fill: var(--client-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .socials__item:hover & {
-  fill: var(--white-color);
+    fill: var(--white-color);
+  }
 }
-}
-
 
 .socials__link {
   display: block;
   margin-top: 9px;
 }
 
-
-
-.socials__item--dark { background-color: rgba(255, 255, 255, 0.1);
-  width:50%;
+.socials__item--dark {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-& + & {margin-left:10px;}}
+  & + & {
+    margin-left: 10px;
+  }
+}
